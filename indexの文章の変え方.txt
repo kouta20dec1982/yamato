@@ -1,0 +1,21 @@
+ターミナルを使ってhtmlファイルを設置
+
+任意のフォルダを作り、移動します。
+フォルダをgithub上のリポジトリに紐付けます。
+$ cd ~/
+$ mkdir lig-co.github.io
+$ cd lig-co.github.io
+
+
+htmlファイルを作成してgithub上に設置します。編集するときは、編集後にここのコマンドを繰り返します。
+$ touch README.md
+$ echo "hello github.io!!" > index.html
+$ git init
+$ git remote add origin git@github.com:lig-co/lig-co.github.io.git
+
+
+これでページがアップロードされます。
+$ git add .
+$ git commit -m "first commit"
+$ git push origin master
+
